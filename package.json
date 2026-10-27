@@ -1,15 +1,17 @@
 {
-  "name": "@croct/ts-project",
+  "name": "@croct/content-model",
   "version": "0.0.0-dev",
-  "description": "A brief description about the project.",
+  "description": "A library for modeling, validating and interpolating structured content.",
   "author": {
     "name": "Croct",
-    "email": "lib+project-ts@croct.com",
-    "url": "https://github.com/croct-tech/project-ts"
+    "email": "lib+content-model@croct.com",
+    "url": "https://github.com/croct-tech/public-content-model-js"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "croct",
+    "pms",
+    "content-model",
     "personalization",
     "typescript"
   ],
@@ -17,31 +19,27 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/croct-tech/project-ts.git"
+    "url": "git+https://github.com/croct-tech/public-content-model-js.git"
   },
   "bugs": {
-    "url": "https://github.com/croct-tech/project-ts/issues"
+    "url": "https://github.com/croct-tech/public-content-model-js/issues"
   },
-  "homepage": "https://github.com/croct-tech/project-ts",
+  "homepage": "https://github.com/croct-tech/public-content-model-js",
   "scripts": {
-    "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'",
-    "test": "jest -c jest.config.js --coverage",
-    "validate": "tsc --noEmit",
-    "build": "tsc -p tsconfig.build.json"
+    "validate": "npm run validate-package",
+    "validate-package": "npm pack --dry-run"
   },
-  "devDependencies": {
-    "@croct/eslint-plugin": "^0.9.0",
-    "@swc/jest": "^0.2.24",
-    "@types/jest": "^30.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
-    "eslint": "^10.0.0",
-    "jest": "^30.0.0",
-    "jest-extended": "^7.0.0",
-    "ts-node": "^10.8.2",
-    "typescript": "^7.0.0"
+  "dependencies": {
+    "@croct/json": "^2.1",
+    "@croct/json-pointer": "^0.3.0",
+    "@croct/logging": "^0.2",
+    "@croct/time": "^0.11.1",
+    "json-schema-typed": "^8.0",
+    "object-hash": "^3.0.0"
   },
   "files": [
     "**/*.js",
+    "**/*.json",
     "**/*.ts"
   ]
 }
