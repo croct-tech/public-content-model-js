@@ -1,101 +1,48 @@
 <p align="center">
-    <a href="https://croct.com">
-        <img src="https://cdn.croct.io/brand/logo/repo-icon-green.svg" alt="Croct" height="80"/>
-    </a>
-    <br />
-    <strong>TypeScript Project Title</strong>
-    <br />
-    A brief description about the project.
+  <a href="https://croct.com" target="_blank">
+    <picture>
+      <source media="(min-width: 769px) and (prefers-color-scheme: light)" srcset="https://github.com/croct-tech/plug-js/blob/master/.github/assets/header-light.svg">
+      <source media="(min-width: 769px) and (prefers-color-scheme: dark)" srcset="https://github.com/croct-tech/plug-js/blob/master/.github/assets/header-dark.svg">
+      <source media="(max-width: 768px) and (prefers-color-scheme: dark)" srcset="https://github.com/croct-tech/plug-js/blob/master/.github/assets/header-dark-mobile.svg">
+      <source media="(max-width: 768px) and (prefers-color-scheme: light)" srcset="https://github.com/croct-tech/plug-js/blob/master/.github/assets/header-light-mobile.svg">
+      <img src="https://github.com/croct-tech/plug-js/blob/master/.github/assets/header-light-mobile.svg" alt="Croct" title="Croct Logo" width="100%">
+    </picture>
+  </a>
+  <br/>
+  <strong>Content Model</strong>
+  <br/>
+  A library for modeling, validating, and interpolating structured content.
 </p>
+
 <p align="center">
-    <img alt="Build" src="https://img.shields.io/badge/build-passing-green" />
-    <br />
-    <br />
-    <a href="https://github.com/croct-tech/repository-template-typescript/releases">📦 Releases</a>
-    ·
-    <a href="https://github.com/croct-tech/repository-template-typescript/issues/new?labels=bug&template=bug-report.md">🐞 Report Bug</a>
-    ·
-    <a href="https://github.com/croct-tech/repository-template-typescript/issues/new?labels=enhancement&template=feature-request.md">✨ Request Feature</a>
+  <a href="https://www.npmjs.com/package/@croct/content-model"><img alt="Version" src="https://img.shields.io/npm/v/@croct/content-model"/></a>
+  <a href="https://github.com/croct-tech/public-content-model-js/actions/workflows/validations.yaml"><img alt="Validations" src="https://github.com/croct-tech/public-content-model-js/actions/workflows/validations.yaml/badge.svg"/></a>
+  <br/>
+  <br/>
+  <a href="https://github.com/croct-tech/public-content-model-js/releases">Releases</a>
+  ·
+  <a href="https://github.com/croct-tech/public-content-model-js/issues/new?labels=bug&template=bug-report.md">Report Bug</a>
+  ·
+  <a href="https://github.com/croct-tech/public-content-model-js/issues/new?labels=enhancement&template=feature-request.md">Request Feature</a>
 </p>
 
-# Instructions
-Follow the steps below to create a new repository:
-
-1. Customize the repository
-   1. Click on the _Use this template_ button at the top of this page
-   2. Clone the repository locally 
-   3. Update the `README.md` and `package.json` with the new package information
-2. Setup Code Climate
-   1. Add the project to [Croct's code climate organization](https://codeclimate.com/accounts/5e714648faaa9c00fb000081/dashboard)
-   2. Go to **Repo Settings > Test coverage** and copy the "_TEST REPORTER ID_"
-   3. Go to **Repo Settings > Badges** and copy the maintainability and coverage badges to the `README.md` 
-   4. On the Github repository page, go to **Settings > Secrets** and add a secret with name `CC_TEST_REPORTER_ID` and the ID from the previous step as value.
-   
 ## Installation
-We recommend using [NPM](https://www.npmjs.com) to install the package:
+
+Install the package from the public npm registry:
 
 ```sh
-npm install @croct/project-ts
+npm install @croct/content-model
 ```
 
-## Basic usage
+## Repository contents
 
-```typescript
-import {Example} from '@croct/project-ts';
-
-const example = new Example();
-example.displayBasicUsage();
-```
+The package contents in this repository are synchronized automatically before a release. Changes to generated package files may be overwritten by the next synchronization.
 
 ## Contributing
-Contributions to the package are always welcome! 
 
-- Report any bugs or issues on the [issue tracker](https://github.com/croct-tech/project-ts/issues).
-- For major changes, please [open an issue](https://github.com/croct-tech/project-ts/issues) first to discuss what you would like to change.
-- Please make sure to update tests as appropriate.
-
-## Testing
-
-Before running the test suites, the development dependencies must be installed:
-
-```sh
-npm install
-```
-
-Then, to run all tests:
-
-```sh
-npm run test
-```
-
-Run the following command to check the code against the style guide:
-
-```sh
-npm run lint
-```
-
-## Building
-
-Before building the project, the dependencies must be installed:
-
-```sh
-npm install
-```
-
-Then, to build the CommonJS module:
-
-```sh
-npm run rollup
-```
-
-The following command bundles a minified IIFE module for browsers:
-
-```
-npm run rollup-min
-```
+- Report bugs on the [issue tracker](https://github.com/croct-tech/public-content-model-js/issues).
+- For feature requests or major changes, [open an issue](https://github.com/croct-tech/public-content-model-js/issues) first to discuss the proposal.
 
 ## License
 
-Copyright © 2015-2022 Croct Limited, All Rights Reserved.
-
-All information contained herein is, and remains the property of Croct Limited. The intellectual, design and technical concepts contained herein are proprietary to Croct Limited s and may be covered by U.S. and Foreign Patents, patents in process, and are protected by trade secret or copyright law. Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from Croct Limited.
+This project is released under the [MIT License](LICENSE).
